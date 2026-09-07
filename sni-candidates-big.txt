@@ -1,0 +1,189 @@
+# ============================================================
+#  کاندیدهای SNI برای REALITY — شبکه‌های محتوایی و دانلود
+#  تمرکز روی دامنه‌هایی که ماهیت سیاسی/اجتماعی ندارند
+#  و معمولا هدف فیلترینگ محتوایی نیستند.
+#
+#  اجرا:
+#    ./reality-sni-check.sh -f sni-candidates-big.txt -c DE -j 10 -o ok-de.txt
+#    (سپس همان ok-de.txt را روی یک ماشین داخل ایران دوباره اجرا کن)
+#
+#  علامت‌ها در کامنت هر بخش:
+#    [AS]  شبکه اختصاصی خود شرکت — بهترین حالت برای dest
+#    [CDN] روی CDN مشترک — کار می‌کند ولی اسکریپت WARN می‌دهد
+# ============================================================
+
+
+# ---------- Apple [AS714 — شبکه اختصاصی] ----------
+# هاست‌های توزیع نرم‌افزار؛ دانلود حجیم و طولانی رویشان کاملا طبیعی است
+swdist.apple.com
+gdmf.apple.com
+mesu.apple.com
+gs.apple.com
+appldnld.apple.com
+updates.cdn-apple.com
+osxapps.itunes.apple.com
+iosapps.itunes.apple.com
+configuration.apple.com
+xp.apple.com
+init.itunes.apple.com
+setup.icloud.com
+captive.apple.com
+
+# ---------- Microsoft / Windows Update ----------
+download.windowsupdate.com
+dl.delivery.mp.microsoft.com
+tlu.dl.delivery.mp.microsoft.com
+au.download.windowsupdate.com
+officecdn.microsoft.com
+go.microsoft.com
+download.microsoft.com
+aka.ms
+docs.microsoft.com
+learn.microsoft.com
+visualstudio.microsoft.com
+assets1.xboxlive.com
+assets2.xboxlive.com
+
+# ---------- Google / Android [شبکه اختصاصی] ----------
+dl.google.com
+redirector.gvt1.com
+storage.googleapis.com
+www.gstatic.com
+android.clients.google.com
+dl.l.google.com
+clients1.google.com
+edgedl.me.gvt1.com
+update.googleapis.com
+
+# ---------- Steam / Valve [AS32590 — شبکه اختصاصی] ----------
+lancache.steamcontent.com
+cs.steamcontent.com
+content1.steampowered.com
+content2.steampowered.com
+content3.steampowered.com
+content4.steampowered.com
+content5.steampowered.com
+content6.steampowered.com
+content7.steampowered.com
+content8.steampowered.com
+cs.steampowered.com
+media.steampowered.com
+
+# ---------- Steam [CDN مشترک — درجه دو] ----------
+cdn.steamstatic.com
+store.steampowered.com
+steamcommunity.com
+api.steampowered.com
+
+# ---------- سایر پلتفرم‌های بازی ----------
+epicgames-download1.akamaized.net
+download.epicgames.com
+fastly-download.epicgames.com
+us.cdn.blizzard.com
+eu.cdn.blizzard.com
+level3.blizzard.com
+blzddist1-a.akamaihd.net
+dist.blizzard.com
+l3cdn.riotgames.com
+lol.dyn.riotcdn.net
+valorant.dyn.riotcdn.net
+origin-a.akamaihd.net
+lvlt.cdn.ea.com
+akamai.cdn.ea.com
+gs2.ww.prod.dl.playstation.net
+zeus.dl.playstation.net
+ccs.cdn.wup.shop.nintendo.net
+idbe-wup.cdn.nintendo.net
+
+# ---------- درایور و سخت‌افزار ----------
+download.nvidia.com
+us.download.nvidia.com
+international.download.nvidia.com
+gfwsl.geforce.com
+drivers.amd.com
+downloadcenter.intel.com
+downloadmirror.intel.com
+dlcdnets.asus.com
+downloads.dell.com
+ftp.hp.com
+support.lenovo.com
+
+# ---------- توزیع‌های لینوکس و مخازن نرم‌افزار ----------
+archive.ubuntu.com
+security.ubuntu.com
+releases.ubuntu.com
+cdimage.ubuntu.com
+deb.debian.org
+cdn.kernel.org
+mirror.hetzner.com
+mirrors.edge.kernel.org
+dl.fedoraproject.org
+download.opensuse.org
+mirror.rackspace.com
+ftp.gnu.org
+
+# ---------- ناشران نرم‌افزار ----------
+download-installer.cdn.mozilla.net
+ftp.mozilla.org
+archive.mozilla.org
+download.docker.com
+download.jetbrains.com
+get.videolan.org
+download.virtualbox.org
+downloads.raspberrypi.org
+download.blender.org
+ardownload.adobe.com
+swupmf.adobe.com
+downloads.sourceforge.net
+files.pythonhosted.org
+registry.npmjs.org
+
+# ---------- ابر و میزبانی اروپا ----------
+www.hetzner.com
+mirror.hetzner.de
+www.ovh.com
+www.ovhcloud.com
+www.leaseweb.com
+mirror.leaseweb.com
+www.scaleway.com
+www.online.net
+www.contabo.com
+www.ionos.com
+www.netcup.eu
+www.digitalocean.com
+www.linode.com
+www.vultr.com
+
+# ---------- صنعتی و شرکتی اروپا ----------
+www.siemens.com
+www.bosch.com
+www.zeiss.com
+www.sap.com
+www.lufthansa.com
+www.bmw.de
+www.audi.de
+www.porsche.com
+www.mercedes-benz.com
+www.abb.com
+www.philips.com
+www.ericsson.com
+
+# ---------- دانشگاهی و پژوهشی ----------
+www.tum.de
+www.rwth-aachen.de
+www.mpg.de
+www.dfn.de
+www.kit.edu
+www.ethz.ch
+www.cern.ch
+arxiv.org
+
+# ---------- نقشه، ابزار و متفرقه ----------
+tile.openstreetmap.org
+www.speedtest.net
+cdn.jsdelivr.net
+unpkg.com
+fonts.gstatic.com
+player.vimeo.com
+www.wikimedia.org
+upload.wikimedia.org
